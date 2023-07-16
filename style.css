@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hone {
+    color: blue;
+}
+
+.htwo {
+    color: rgb(255, 196, 0);
+}
+
+.hthree {
+    color: red;
+}
+
+.hfour {
+    color: black;
+}
+
+.line {
+    position: relative;
+    width: 300px;
+    height: 80px;
+}
+
+.one::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0,22,255,1) 0%, rgba(0,22,255,1) 50%, rgba(159,159,159,1) 50%, rgba(159,159,159,1) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.one::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    bottom: -10px;
+}
+.two::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, rgb(255, 196, 0) 0%, rgb(255, 196, 0) 50%, rgba(159,159,159,1) 50%, rgba(159,159,159,1) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.two::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    bottom: -10px;
+}
+.three::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 50%, rgba(159,159,159,1) 50%, rgba(159,159,159,1) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.three::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: -10px;
+}
+.four::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(159,159,159,1) 50%, rgba(159,159,159,1) 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+.four::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+}
+
+.circle .one::before {
+    border-radius: 50%;
+}
+
+.circle .two::before {
+    border-radius: 50%;
+}
+
+.circle .three::before {
+    border-radius: 50%;
+}
+
+.circle .four::before {
+    border-radius: 50%;
+}
+
+
+.down .one::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: -10px;
+    border-width: 20px;
+    border-color: transparent transparent blue transparent;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+
+.down .two::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: -10px;
+    border-width: 20px;
+    border-color: transparent transparent rgb(255, 196, 0) transparent;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+
+.down .three::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: -10px;
+    border-width: 20px;
+    border-color: transparent transparent red transparent;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+
+.down .four::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: -10px;
+    border-width: 20px;
+    border-color: transparent transparent black transparent;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+}
+
+
+.up .one::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: blue transparent transparent transparent;
+    background-color: transparent;
+    bottom: -40px;
+    left: 0;
+}
+
+.up .two::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgb(255, 196, 0) transparent transparent transparent;
+    background-color: transparent;
+    bottom: -40px;
+    left: 0;
+}
+
+.up .three::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red transparent transparent transparent;
+    background-color: transparent;
+    bottom: -40px;
+    left: 0;
+}
+
+.up .four::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: black transparent transparent transparent;
+    background-color: transparent;
+    bottom: -40px;
+    left: 0;
+}
